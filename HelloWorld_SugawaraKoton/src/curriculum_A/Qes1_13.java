@@ -39,7 +39,7 @@ public class Qes1_13 {
 		// initialに文字型の初期値「\u0000」を代入する
 		initial = '\u0000';
 		// multipleに文字列型の初期値「null」を代入する
-		multiple = "null";
+		multiple = null;
 		// judgementにブーリアン型の初期値「false」を代入する
 		judgement = false;
 		// 初期化をしたそれぞれの変数に値を代入する
@@ -65,7 +65,7 @@ public class Qes1_13 {
 		// tiny,small,usually,largeを加算する
 		System.out.println(tiny + small + usually + large);
 		// tinyと2を乗算する
-		System.out.println(tiny * 2);
+		System.out.println(tiny + tiny);
 		// initial,multiple,judgementを文字列として出力する(" "で空白を入れている)
 		System.out.println(initial + " " + multiple + " " + judgement);
 		// tiny,small,usually,large,ambiguousDecimal,decimalを加算する
@@ -126,12 +126,17 @@ public class Qes1_13 {
 		System.out.println("好きな食べ物は" + like + "です");
 		// roundメソッドで小数を四捨五入する(100をかけて割ることで小数第3位を四捨五入している)
 		System.out.println("BMIは" + ((double) Math.round(bmi * 100)) / 100 + "です");
+		// 変数に再代入する
+		age = 24;
 		// boolean型の変数を宣言
 		boolean isOverTeenage;
 		// 条件式(age >= 25)を変数に入れる
 		isOverTeenage = (age >= 25);
 		// 結果をコンソールに出力する
 		System.out.println(isOverTeenage);
+		// 変数に再代入する
+		hight = 168.5;
+		wight = 64.2;
 		// valueOfメソッドの引数にdoubleの値を指定する
 		String changeAge = String.valueOf(age);
 		String changeHight = String.valueOf(hight);
