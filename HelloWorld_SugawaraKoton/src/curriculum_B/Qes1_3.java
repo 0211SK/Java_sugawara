@@ -28,6 +28,8 @@ public class Qes1_3 {
 				// whileでのループ処理を抜ける
 				break;
 			}
+			// Scannerクラスを閉じる
+			user.close();
 		}
 
 		// [概要]じゃんけんのシステムを作成する
@@ -140,5 +142,4 @@ public class Qes1_3 {
 		// checkResultに戻り値(フラグ)を返す処理
 		return rtn2;
 	}
-
 }

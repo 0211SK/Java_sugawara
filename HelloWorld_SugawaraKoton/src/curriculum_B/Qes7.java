@@ -30,6 +30,8 @@ public class Qes7 {
 				// 生徒数をコンソールに入力する処理から抜けだす
 				break;
 			}
+			// Scannerクラスを閉じる
+			scn.close();
 		}
 		// Scannerクラスを初期化する
 		Scanner test = new Scanner(System.in);
@@ -71,6 +73,8 @@ public class Qes7 {
 			// 改行する
 			System.out.print("\r\n");
 		}
+		// Scannerクラスを閉じる
+		test.close();
 		// [概要]各生徒の平均点を求める処理
 		for (int i = 0; i < s; i++) {
 			// 変数mesにi + 1の数字を格納する(そのままだと表示する際に0人から始まってしまうため)
