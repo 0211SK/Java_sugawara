@@ -9,20 +9,18 @@ public class Qes5 {
 			for (int j = 1; j <= 20; j++) {
 				// 変数kakezanにiとjの掛け算を入れる
 				int kakezan = i * j;
-				// jが９の時、最後の||を表示しないようにする
+				// jが20の時、最後の||を表示しないようにする
 				if (j == 20) {
-					// System.out.print()で改行しないようにする
 					// String.format("%03d", 値)で数値が2桁以下の時に左側に0埋めされるようにする
-					System.out.print(String.format("%03d", i) + " * " + String.format("%03d", j) + " = "
+					System.out.print(String.format("%03d", j) + " * " + String.format("%03d", i) + " = "
 							+ String.format("%03d", kakezan) + " ");
 				} else {
-					// System.out.print()で改行しないようにする
 					// String.format("%03d", 値)で数値が2桁以下の時に左側に0埋めされるようにする
-					System.out.print(String.format("%03d", i) + " * " + String.format("%03d", j) + " = "
+					System.out.print(String.format("%03d", j) + " * " + String.format("%03d", i) + " = "
 							+ String.format("%03d", kakezan) + " || ");
 				}
 			}
-			// 各段の終わりで改行する
+			// 改行する
 			System.out.println();
 		}
 	}

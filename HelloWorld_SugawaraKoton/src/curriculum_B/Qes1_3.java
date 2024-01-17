@@ -15,21 +15,21 @@ public class Qes1_3 {
 		// [概要]ユーザー名を入力する時の処理
 		// 変数userNameを初期化する
 		String userName = "";
+		// Scannerクラスを初期化する
+		Scanner user = new Scanner(System.in);
 		// while(true)を使うことでコンソール入力を無限ループさせる
 		while (true) {
-			// Scannerクラスを初期化する
-			Scanner user = new Scanner(System.in);
 			// 入力した内容（標準入力）をString型として1行取得
 			userName = user.nextLine();
 			// checkNameメソッドの戻り値を代入する(trueかfalseが戻り値のためboolean型)
 			boolean rtn = checkName(userName);
 			// checkNameメソッドでtrueが返ってきたらループを抜ける処理
 			if (rtn == true) {
+				// Scannerクラスを閉じる
+				user.close();
 				// whileでのループ処理を抜ける
 				break;
 			}
-			// Scannerクラスを閉じる
-			user.close();
 		}
 
 		// [概要]じゃんけんのシステムを作成する
